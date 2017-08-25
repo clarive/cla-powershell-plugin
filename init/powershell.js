@@ -12,7 +12,7 @@ reg.register('service.powershell.script', {
         var powershellServer = params.server;
         var command = 'powershell ';
         var file = params.file || '';
-        var customParams = params.customParams || '';
+        var customParams = params.customParams;
         var script = params.script || '';
         var ciServer = ci.findOne({
             mid: powershellServer + ''
@@ -23,7 +23,7 @@ reg.register('service.powershell.script', {
         }
 
         if (customParams) {
-            command = command + ' ' + customParams;
+            command = command + ' ' + customParams.join(" ");
         }
         if (file) {
             command = command + ' -File ' + '"' + file + '"';

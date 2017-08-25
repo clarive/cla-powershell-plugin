@@ -24,10 +24,12 @@
             script.show();
         }
     });
-    var customParams = Cla.ui.textField({
+    var customParams = Cla.ui.arrayGrid({
         name: 'customParams',
         fieldLabel: _('Custom Params'),
-        value: data.customParams || '',
+        value: data.customParams,
+        description: _('Custom commands or arguments'),
+        default_value: '.'
     });
 
     var script = Cla.ui.textArea({

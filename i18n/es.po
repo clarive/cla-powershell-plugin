@@ -4,7 +4,7 @@ msgstr "Servidor CI no encontrado"
 
 #: init/powershell.js
 msgid "Command powershell: "
-msgstr "Commando powershell"
+msgstr "Commando powershell: "
 
 #: public/form/powershell-form.js
 msgid "Server"
@@ -16,7 +16,11 @@ msgstr "Ruta a un fichero powershell"
 
 #: public/form/powershell-form.js
 msgid "Custom Params"
-msgstr "Parámetros personalizado"
+msgstr "Parámetros personalizados"
+
+#: public/form/powershell-form.js
+msgid "Custom commands or arguments"
+msgstr "Parámetros personalizados o argumentos"
 
 #: public/form/powershell-form.js
 msgid "Script"
