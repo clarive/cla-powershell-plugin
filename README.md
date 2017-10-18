@@ -22,6 +22,7 @@ This palette service will enable you to use commands that allow you to interact 
 The main fields are:
 
 - **Server** - Server where Powershell is installed.
+- **Powershell Path** - Path where is Powershell located.
 - **Path to a Powershell file** - Path to a Powershell file in the Server.
 - **Custom Params** - Paramaters that can be used by command line.
 - **Script** - When you do not use a Powershell file, you can write the script in this field.
@@ -29,12 +30,14 @@ The main fields are:
 Configuration example:
 
     Server CI: GenericServer
+    Powershell Path: /path/powershell.exe
     Path to a Powershell file: c:\script.ps1
     Custom Params: -ExecutionPolicy RemoteSigned
     
 Configuration example without path file:
 
     Server CI: GenericServer
+    Powershell Path: /path/powershell.exe
     Path to a Powershell file:
     Custom Params: -ExecutionPolicy RemoteSigned
     Script: Write-Host "Hello, World!"

@@ -11,6 +11,10 @@ msgid "Server"
 msgstr "Servidor"
 
 #: public/form/powershell-form.js
+msgid "Powershell Path"
+msgstr "Ruta a Powershell"
+
+#: public/form/powershell-form.js
 msgid "Path to a powershell file"
 msgstr "Ruta a un fichero powershell"
 

@@ -11,6 +11,13 @@
         with_vars: 1
     });
 
+    var pathPowershell = Cla.ui.textField({
+        name: 'powershell',
+        fieldLabel: _('Powershell Path'),
+        value: data.powershell || '',
+        allowBlank: false,
+    });
+
     var pathFile = Cla.ui.textField({
         name: 'file',
         fieldLabel: _('Path to a powershell file'),
@@ -54,6 +61,7 @@
         layout: 'form',
         items: [
             serverCombo,
+            pathPowershell,
             pathFile,
             customParams,
             script,

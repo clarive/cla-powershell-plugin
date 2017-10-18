@@ -10,7 +10,7 @@ reg.register('service.powershell.script', {
         var reg = require('cla/reg');
         var fs = require('cla/fs');
         var powershellServer = params.server;
-        var command = 'powershell ';
+        var command = params.powershell || '';
         var file = params.file || '';
         var customParams = params.customParams;
         var script = params.script || '';
