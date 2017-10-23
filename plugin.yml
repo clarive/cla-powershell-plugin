@@ -1,7 +1,7 @@
 name: Clarive Powershell Plugin
 description: The powershell plugin will allow you to run script powershell via the command-line (CLI).
 version: 1.0
-icon: https://github.com/clarive/cla-powershell-plugin/public/icon/powershell.svg
+icon: https://cdn.rawgit.com/clarive/cla-powershell-plugin/master/public/icon/powershell.svg?sanitize=true
 url: https://github.com/clarive/cla-powershell-plugin
 requires:
   - clarive_version: 6.8 <= version
