@@ -4,6 +4,16 @@ reg.register('service.powershell.script', {
     name: 'Powershell',
     icon: '/plugin/cla-powershell-plugin/icon/powershell.svg',
     form: '/plugin/cla-powershell-plugin/form/powershell-form.js',
+    rulebook: {
+        moniker: 'powershell_script',
+        description: _('Launch Powershell scripts'),
+        required: [ 'server', 'powershell'],
+        allow: ['server', 'powershell', 'file', 'custom_params', 'script', 'errors'],
+        mapper: {
+            'custom_params':'customParams',
+            'errors':'type'
+        }
+    },
     handler: function(ctx, params) {
         var ci = require("cla/ci");
         var log = require('cla/log');
@@ -65,6 +75,6 @@ reg.register('service.powershell.script', {
                 rc_warn: params.warn
             }
         });
-        return output;
+        return output.output;
     }
 });

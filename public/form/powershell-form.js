@@ -65,7 +65,7 @@
             pathFile,
             customParams,
             script,
-            errors,
+            errors
         ]
     });
 
