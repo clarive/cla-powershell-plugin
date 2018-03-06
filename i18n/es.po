@@ -1,6 +1,14 @@
 #: init/powershell.js
+msgid "Launch Powershell scripts"
+msgstr "Lanza scripts de Powershell"
+
+#: init/powershell.js
 msgid "CI Server not found"
 msgstr "Servidor CI no encontrado"
+
+#: init/powershell.js
+msgid "Script content: "
+msgstr "Contenido del script: "
 
 #: init/powershell.js
 msgid "Command powershell: "

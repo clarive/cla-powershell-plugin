@@ -41,7 +41,10 @@ reg.register('service.powershell.script', {
             if (script) {
                 var server = ci.load(powershellServer);
                 var remoteTemp = server.remoteTemp();
-                fs.createFile('/tmp/powershellscript-' + powershellServer + '.ps1', script);
+                var filePath = '/tmp/powershellscript-' + powershellServer + '.ps1';
+                fs.createFile(filePath, script);
+                var content = fs.slurp(filePath);
+                log.debug(_("Script content: "), content);
 
                 var output = reg.launch('service.fileman.ship', {
                     name: 'Ship a File Remotely',
