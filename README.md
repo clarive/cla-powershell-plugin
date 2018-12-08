@@ -1,6 +1,6 @@
 # Powershell Plugin
 
-<img src="https://cdn.rawgit.com/clarive/cla-powershell-plugin/master/public/icon/powershell.svg?sanitize=true" alt="Powershell Plugin" title="Powershell Plugin" width="120" height="120">
+<img src="https://cdn.jsdelivr.net/gh/clarive/cla-powershell-plugin@master/public/icon/powershell.svg?sanitize=true" alt="Powershell Plugin" title="Powershell Plugin" width="120" height="120">
 
 The powershell plugin will allow you to run script powershell via the command-line (CLI).
 
